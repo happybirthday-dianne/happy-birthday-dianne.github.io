@@ -114,7 +114,13 @@ const animationTimeline = () => {
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-4", 0.7, {
+    opacity: 0,
+    y: 20,
+    rotationY: 5,
+    skewX: "-15deg",
+    delay:3
+  }, "+=1.5")
     .from(
       ".idea-5",
       0.7,
